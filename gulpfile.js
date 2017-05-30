@@ -41,7 +41,7 @@ gulp.task('twig', () => {
     .on("end", reload)
 })
 
-gulp.task('serve', ['scss'], () => {
+gulp.task('serve', ['scss', 'twig'], () => {
   browserSync({
     server: './dist'
   })
