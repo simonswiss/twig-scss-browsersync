@@ -36,7 +36,7 @@ gulp.task('scss', () => {
 // Twig to HTML
 gulp.task('twig', () => {
   return gulp.src(src.twig.compile)
-    .pipe(twig({ base: src.twig }))
+    .pipe(twig({ base: 'src/twig' }))
     .pipe(gulp.dest('./dist'))
     .on("end", reload)
 })
